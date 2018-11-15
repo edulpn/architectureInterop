@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.1'
+
+target 'ArchitectureInterop' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ArchitectureInterop
+  pod 'Moya/RxSwift', '~> 11.0'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+
+  target 'ArchitectureInteropTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
